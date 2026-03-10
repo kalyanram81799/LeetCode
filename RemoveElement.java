@@ -14,6 +14,22 @@ public class RemoveElement {
             }
         }
 
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
         return k;
     }
 
@@ -28,7 +44,7 @@ public class RemoveElement {
 
         System.out.print("Updated Array: ");
         for (int i = 0; i < newLength; i++) {
-            System.out.print(nums[i] + " ");
+            System.out.println(nums[i] + " ");
         }
     }
 }
