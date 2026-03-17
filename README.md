@@ -1,1 +1,1 @@
-Daily Leetcode Practice
+Daily Leetcode Problems Practice
