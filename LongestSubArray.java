@@ -4,26 +4,26 @@ class LongestSubArray {
 
     public int LongestSubArray(int[] nums, int k) {
 
-        int left = 0, right = 0;
+        int l = 0, r = 0;
         long sum = nums[0];
         int maxLen = 0;
         int n = nums.length;
 
-        while (right < n) {
+        while (r < n) {
 
-            while (left <= right && sum > k) {
-                sum -= nums[left];
-                left++;
+            while (l <= r && sum > k) {
+                sum -= nums[l];
+                l++;
             }
 
             if (sum == k) {
-                maxLen = Math.max(maxLen, right - left + 1);
+                maxLen = Math.max(maxLen, r - l + 1);
             }
 
-            right++;
+            r++;
 
-            if (right < n) {
-                sum += nums[right];
+            if (r < n) {
+                sum += nums[r];
             }
         }
 
